@@ -61,3 +61,7 @@ app.get("/api/classify", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+app.get("/", (req, res) => {
+  res.send("API is running 🚀 Use /api/classify?name=john");
+});
